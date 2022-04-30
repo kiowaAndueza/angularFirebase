@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 
 import { AngularFireModule} from '@angular/fire/compat'
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 
 
 
