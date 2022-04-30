@@ -1,0 +1,36 @@
+<div class="container mt-1 d-flex justify-content-center">
+  <div class="abs-center col-md-6">
+    <form class="border p-3 shadow p-3 mb-5 bg-white rounded">
+      <div class="row mb-4">
+        <div class="col-4"> </div>
+        <div class="col-6 add">NEW SONG <img src="../../assets/music.svg" alt="music"></div>
+      </div>
+      <div>
+        <div class="form-group mb-3">
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="title" value="{{title}}" class="form-control rounded" [(ngModel)]="song.title">
+        </div>
+        <div class="form-group mb-3">
+          <label for="artist">Artist:</label>
+          <input type="text" name="artist" id="artist" value="{{artist}}" class="form-control rounded" [(ngModel)]="song.artist">
+        </div>
+        <div class="form-group mb-3">
+          <label for="releaseDate">Release date:</label>
+          <input type="text" name="releaseDate" id="releaseDate" value="{{releaseDate}}" class="form-control rounded" [(ngModel)]="song.releaseDate">
+        </div>
+        <div class="form-group mb-3">
+          <label for="globalSales">Global Sales:</label>
+          <input type="text" name="globalSales" id="globalSales" value="{{globalSales}}" class="form-control rounded" [(ngModel)]="song.globalSales">
+        </div>
+        <div class="form-group mb-3">
+          <label for="musicGenre">Music genre:</label>
+          <input type="text" name="musicGenre" id="musicGenre" value="{{musicGenre}}" class="form-control rounded" [(ngModel)]="song.musicGenre">
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-danger mt-2" (click)="onSelect()">Cancel</button>
+        <button (click)="saveSongs()" class="btn btn-success mt-2">{{ id ? 'Update' : 'Save' }}</button>
+      </div>
+    </form>
+  </div>
+</div>

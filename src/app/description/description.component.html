@@ -1,0 +1,17 @@
+<div class="container items">
+    <div class="col-md-12">
+        <div class="card" *ngIf="id">
+            <div  class="col-md-7 mt-4 description"><h3>Description of: {{title}}</h3></div>
+            <ul class="card-body descriptionBody">
+                <li class="mb-2">Artist: {{artist}}</li>
+                <li class="mb-2">Global Sales: {{globalSales}}</li>
+                <li class="mb-2">Music Genre: {{musicGenre}}</li>
+                <li class="mb-2">Release date: {{releaseDate}}</li>
+            </ul>
+        </div>
+        <div class="card" *ngIf="!id">
+            <div  class="col-md-7 mt-4 description"><h3>Description:</h3></div>
+            <p class="card-body descriptionBody">No song selected.</p>
+        </div>
+    </div>
+</div>
